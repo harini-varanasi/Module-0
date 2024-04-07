@@ -94,7 +94,7 @@ class Module3(minitorch.Module):
 
 @pytest.mark.task0_4
 @given(med_ints, med_ints)
-def test_module(size_a: int, size_b: int) -> None:
+def test_module(size_a, size_b) -> None:
     "Check the properties of a single module"
     module = Module2()
     module.eval()
